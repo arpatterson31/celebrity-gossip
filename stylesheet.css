@@ -14,6 +14,14 @@ nav {
     background-color: #9ec3ff;
 }
 
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    
+}
+
 footer {
     background-color: #8490E8;
 }
