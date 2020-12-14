@@ -29,6 +29,20 @@ function mouseOut() {
     document.getElementById("home").style.color = "black";
 }
 
+// creating greeting for the page 
+var myDate = new Date ();
+var hrNow = myDate.getHours();
+var greeting; 
+
+if (hrNow < 12) {
+    greeting = "Good morning, here's the tea!";
+}   else if (hrNow >= 12 && hrNow <= 17) {
+    greeting = "Hey girl, hey!"
+}   else if (hrNow >= 17 && hrNow <= 24) {
+    greeting = "Girl, go to sleep!"
+}
+
+document.getElementById("web-greeting").innerHTML = greeting
 
 
 
