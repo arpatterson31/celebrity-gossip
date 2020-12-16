@@ -1,12 +1,24 @@
 console.log("dear lord help me...")
 
 //creating user input component 
+function validateUserCelebLove() {
+    var storedCelebResponse = "yes"
 
+    var yesOrNo;
+    do {
+        yesOrNo = prompt("Do you love celebrities? yes or no?");
+    }while(yesOrNo !== storedCelebResponse);
+
+}
+
+validateUserCelebLove();
 
 function celebrityQuestion(){
     var promptQuestion = "Who is your favorite celebrity?";
     var response = prompt(promptQuestion);
     myMessage(response);
+
+    return response;
 }
 
 function myMessage(response){
@@ -18,20 +30,20 @@ function myMessage(response){
     alert(alertMessage)
 }
 
-celebrityQuestion();
+var response = celebrityQuestion();
 
 // can't get this to fire.. need to ask during lab
-function changeBackgroundColor(){
+function changeBackgroundColor(response){
+    var color;
 
-    if (response === " ") {
+    if (response === "") {
         color = "lightblue";
         }
     
     document.getElementById("main").style.backgroundColor = color;
+    }
 
-    changeBackgroundColor();
-
- }
+    changeBackgroundColor(response);
 
 
 //creating new variables for the mouseover and out effect for the home button in the nav
@@ -66,3 +78,10 @@ function timeGreetingMessage(greeting) {
 }
 
 timeGreetingMessage(greeting); 
+
+//var numberOfSomething = prompt("How many Somethings would you like?")
+//for (var i = 0; i < 10; i++) {
+    // body of for loop
+//    console.log(i);
+//}
+
