@@ -20,6 +20,19 @@ function myMessage(response){
 
 celebrityQuestion();
 
+// can't get this to fire.. need to ask during lab
+function changeBackgroundColor(){
+
+    if (response === " ") {
+        color = "lightblue";
+        }
+    
+    document.getElementById("main").style.backgroundColor = color;
+
+    changeBackgroundColor();
+
+ }
+
 
 //creating new variables for the mouseover and out effect for the home button in the nav
 var mouseOver
