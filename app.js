@@ -2,11 +2,11 @@ console.log("dear lord help me...")
 
 //creating user input component 
 function validateUserCelebLove() {
-    var storedCelebResponse = "yes"
-
+    var storedCelebResponse = "yes";
     var yesOrNo;
     do {
         yesOrNo = prompt("Do you love celebrities? yes or no?");
+        yesOrNo = yesOrNo.toLowerCase();
     }while(yesOrNo !== storedCelebResponse);
 
 }
@@ -30,7 +30,9 @@ function myMessage(response){
     alert(alertMessage)
 }
 
-var response = celebrityQuestion();
+celebrityQuestion();
+
+
 
 // can't get this to fire.. need to ask during lab
 function changeBackgroundColor(response){
@@ -79,8 +81,8 @@ function timeGreetingMessage(greeting) {
 
 timeGreetingMessage(greeting); 
 
-//var numberOfSomething = prompt("How many Somethings would you like?")
-//for (var i = 0; i < 10; i++) {
+//var numberOfBradPittFaces = prompt("Rate my Page ")
+//for (var i = 0; i < numberOfBradPittFaces; i++) {
     // body of for loop
 //    console.log(i);
 //}
