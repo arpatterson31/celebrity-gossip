@@ -33,6 +33,17 @@ function myMessage(response){
 celebrityQuestion();
 
 
+function bradPittRatingQ() {
+    var bradPittRating = prompt("On a scale of 1 to 5, how hot is Brad Pitt?");
+    for (var I = 0; I < bradPittRating; i++){
+        document.write("<img src=\"brad_pitt_PNG1.png\">");
+                        
+    }
+
+}
+
+bradPittRatingQ();
+
 
 // can't get this to fire.. need to ask during lab
 function changeBackgroundColor(response){
