@@ -5,7 +5,7 @@ function validateUserCelebLove() {
     var storedCelebResponse = "yes";
     var yesOrNo;
     do {
-        yesOrNo = prompt("Do you love celebrities? yes or no?");
+        yesOrNo = prompt("Do you love celebrities?");
         yesOrNo = yesOrNo.toLowerCase();
     }while(yesOrNo !== storedCelebResponse);
 
