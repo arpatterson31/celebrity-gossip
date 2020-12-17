@@ -35,8 +35,8 @@ celebrityQuestion();
 
 function bradPittRatingQ() {
     var bradPittRating = prompt("On a scale of 1 to 5, how hot is Brad Pitt?");
-    for (var I = 0; I < bradPittRating; i++){
-        document.write("<img src=\"brad_pitt_PNG1.png\">");
+    for (var i = 0; i < bradPittRating; i++){
+        document.write('<p id="bradpitt"><img src=\"bpitt.jpeg\"></p>').innerHTML;
                         
     }
 
