@@ -36,44 +36,14 @@ celebrityQuestion();
 function bradPittRatingQ() {
     var bradPittRating = prompt("On a scale of 1 to 5, how hot is Brad Pitt?");
     for (var i = 0; i < bradPittRating; i++){
-        document.write('<p id="bradpitt"><img src=\"bpitt.jpeg\"></p>').innerHTML;
-                        
+        document.write("<img src=\"images/brad_pitt_PNG1.png\">");
+                    
     }
 
 }
 
 bradPittRatingQ();
 
-
-// can't get this to fire.. need to ask during lab
-function changeBackgroundColor(response){
-    var color;
-
-    if (response === "") {
-        color = "lightblue";
-        }
-    
-    document.getElementById("main").style.backgroundColor = color;
-    }
-
-    changeBackgroundColor(response);
-
-
-//creating new variables for the mouseover and out effect for the home button in the nav
-var mouseOver
-var mouseOut
-
-document.getElementById("home").addEventListener("mouseover", mouseOver);
-document.getElementById("home").addEventListener("mouseout", mouseOut);
-
-function mouseOver() {
-    document.getElementById("home").style.color = "purple";
-}
-function mouseOut() {
-    document.getElementById("home").style.color = "black";
-}
-
-// creating greeting for the page 
 var myDate = new Date ();
 var hrNow = myDate.getHours();
 var greeting; 
@@ -92,9 +62,29 @@ function timeGreetingMessage(greeting) {
 
 timeGreetingMessage(greeting); 
 
-//var numberOfBradPittFaces = prompt("Rate my Page ")
-//for (var i = 0; i < numberOfBradPittFaces; i++) {
-    // body of for loop
-//    console.log(i);
-//}
+var mouseOver
+var mouseOut
 
+document.getElementById("home").addEventListener("mouseover", mouseOver);
+document.getElementById("home").addEventListener("mouseout", mouseOut);
+
+function mouseOver() {
+    document.getElementById("home").style.color = "purple";
+}
+function mouseOut() {
+    document.getElementById("home").style.color = "black";
+}
+// can't get this to fire.. need to ask during lab
+// function changeBackgroundColor(response){
+ //   var color;
+
+ //   if (response !== "") {
+ //       color = "lightblue";
+ //       }
+    
+ //   document.getElementById("main").style.backgroundColor = color;
+ //   }
+
+ //   changeBackgroundColor(response);
+
+    // creating greeting for the page 
